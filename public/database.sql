@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS checkpoint1;
+CREATE DATABASE checkpoint1;
+CREATE TABLE bribe (
+  id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100),
+  payment INT
+);
+
+
+
