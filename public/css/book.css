@@ -63,10 +63,64 @@ main {
     color: white;
 }
 
-@media only screen and (max-width: 800px) {
-    main {
-        padding-top: 1.4em;
+@media only screen and (min-width: 1199px)  {
+    .empty-whisky {
+        display: none;
     }
+    .desktop {
+        display: flex;
+    }
+    .whisky, .inkpen {
+        height: min-content;
+    }
+    .inkpen {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    .empty-whisky {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
+    .whisky, .inkpen {
+        height: min-content;
+    }
+    .inkpen {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1001px) and (max-width: 1100px) {
+    .whisky {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
+    .empty-whisky, .inkpen {
+        height: min-content;
+    }
+    .inkpen {
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: none;
+    }
+    .inkpen {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
     .whisky {
         display: none;
     }
@@ -82,79 +136,6 @@ main {
     }
     .page {
         width: 80%;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-    main {
-        padding-top: 1.4em;
-
-    }
-    .whisky {
-        display: none;
-    }
-    .empty-whisky {
-        display: none;
-    }
-    .inkpen {
-        display: none;
-    }
-  }
-
-@media screen and (min-width: 1001px) and (max-width: 1100px) {
-    main {
-        padding-top: 1.4em;
-
-    }
-    .whisky {
-        display: none;
-    }
-    .desktop {
-        display: flex;
-    }
-    .empty-whisky, .inkpen {
-        height: min-content;
-    }
-    .inkpen {
-        display: none;
-    }
-  }
-
-@media screen and (min-width: 1101px) and (max-width: 1200px) {
-    main {
-        padding-top: 1.4em;
-
-    }
-    .empty-whisky {
-        display: none;
-    }
-    .desktop {
-        display: flex;
-    }
-    .whisky, .inkpen {
-        height: min-content;
-    }
-    .inkpen {
-        display: none;
-    }
-  }
-
-@media only screen and (min-width: 1199px)  {
-    main {
-        padding-top: 2em;
-
-    }
-    .empty-whisky {
-        display: none;
-    }
-    .desktop {
-        display: flex;
-    }
-    .whisky, .inkpen {
-        height: min-content;
-    }
-    .inkpen {
-        align-self: flex-end;
     }
 }
 
